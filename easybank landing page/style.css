@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+/* *********VARIABLE**********/
+:root {
+  --primary-dark-blue: hsl(233, 26%, 24%);
+  --primary-green: hsl(136, 65%, 51%);
+  --primary-cyan: hsl(192, 70%, 51%);
+
+  --neutral-greyish-blue: hsl(233, 8%, 62%);
+  --neutral-light-gray: hsl(220, 16%, 96%);
+  --neutral-very-light-grey: hsl(0, 0%, 98%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  --ff-sans: "Public Sans", sans-serif;
+
+  --fs-header: 18px;
+  --fw-paragraph: 14px;
+  --fw-button: 12px;
+
+  --fw-very-light: 300;
+  --fw-light: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+}
+
+* {
+  font-family: var(--ff-sans);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+header {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 7em;
+  padding-right: 7em;
+}
+
+.main-header {
+  background-color: var(--neutral-white);
+  position: sticky;
+  top: 0;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  font-size: var(--fs-paragraph);
+  color: var(--neutral-greyish-blue);
+}
+header nav ul li {
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
+}
+
+header nav ul li:hover {
+  color: var(--primary-dark-blue);
+  cursor: pointer;
+  border-image: linear-gradient(
+      to right,
+      var(--primary-green),
+      var(--primary-cyan)
+    )
+    1;
+}
+button {
+  color: var(--neutral-white);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-green),
+    var(--primary-cyan)
+  );
+  padding: 12px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  font-size: var(--fs-paragraph);
+  font-weight: var(--fw-semi-bold);
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url(images/bg-intro-desktop.svg);
+  margin: auto;
+  background-color: var(--neutral-very-light-grey);
+  background-size: auto;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  background-position-y: 70%;
+  background-position-x: 700%;
+  height: 100vh;
+}
+
+.hero-text {
+  width: 33vw;
+  /* color: #800808; */
+  padding-left: 7em;
+}
+
+.hero-text h1 {
+  font-weight: var(--fw-light);
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: var(--neutral-greyish-blue);
+  line-height: 25px;
+  margin-bottom: 30px;
+  /* background-color: blueviolet; */
+  width: 30vw;
+}
+
+.hero-image {
+  overflow-x: hidden;
+}
+
+.hero-image img {
+  margin-top: 50px;
+  margin-right: -120px;
+}
+
+.why-section {
+  background-color: var(--neutral-light-gray);
+  padding-top: 5em;
+  /* padding-bottom: 3em; */
+  padding-left: 7em;
+}
+
+.why-section h2 {
+  font-weight: var(--fw-light);
+  padding-bottom: 1em;
+}
+
+.why-section > p {
+  color: var(--neutral-greyish-blue);
+}
+
+.services {
+  background-color: var(--neutral-light-gray);
+  padding: 7em;
+}
+
+.services .cards {
+  display: flex;
+}
+
+.services .cards .card {
+  padding-right: 2em;
+}
+
+.services .cards .card h2 {
+  font-weight: var(--fw-semi-bold);
+  padding-bottom: 1em;
+  color: var(--primary-dark-blue);
+}
+
+.services .cards .card img,
+p {
+  padding-bottom: 1em;
+  color: var(--neutral-greyish-blue);
+}
+
+.articles {
+  padding-left: 7em;
+  padding-right: 7em;
+  padding-top: 6em;
+  background-color: var(--neutral-very-light-grey);
+}
+.articles h2 {
+  font-weight: var(--fw-light);
+  padding-bottom: 2em;
+}
+
+.articles .cards {
+  display: flex;
+  gap: 30px;
+  color: #2D314D;
+}
+
+.articles .cards .card {
+  background-color: var(--neutral-white);
+}
+
+.articles .cards .card img {
+  width: 100%;
+}
+
+.article-text {
+  padding: 2em;
+}
+
+footer{
+    background-color: var(--primary-dark-blue);
+}
