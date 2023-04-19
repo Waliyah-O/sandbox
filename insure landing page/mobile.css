@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: whi;
+        box-sizing: border-box;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .moreDiv{
+        position: relative;
+    }
+
+    .container{
+
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+  }
